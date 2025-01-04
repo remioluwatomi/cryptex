@@ -1,22 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cryptex - Buy & Sell Digital Assets In The Cryptex</title>
+
+    <meta
+      property="og:title"
+      content="Cryptex - Buy & Sell Digital Assets In The Cryptex"
+    />
+    <meta
+      property="og:description"
+      content="Join Cryptex to securely buy, sell, and manage your digital assets. Experience the future of cryptocurrency trading."
+    />
+    <meta property="og:image" content="./images/about-banner.png" />
+    <!-- <meta property="og:url" content="https://cryptex"> -->
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Metadata -->
+    <meta name="twitter:card" content="./images/about-banner.png" />
+    <meta
+      name="twitter:title"
+      content="Cryptex - Buy & Sell Digital Assets In The Cryptex"
+    />
+    <meta
+      name="twitter:description"
+      content="Join Cryptex to securely buy, sell, and manage your digital assets. Experience the future of cryptocurrency trading."
+    />
+    <meta name="twitter:image" content="./images/og-image.jpg" />
+    <!-- <meta name="twitter:url" content="https://cryptex"> -->
+
     <script src="./app.js" defer></script>
-    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
-
-
-<link rel="stylesheet" href="./styles/main.css">
-</head>
-<body  id="body">
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body id="body">
     <!--
     really have to work on my css for this project
     * Animation / Transition
@@ -26,605 +53,573 @@
     min-width, border-start, margin-inline-start
 -->
 
-    <div id="root"  data-navbar="false">
-        <header>
-            <div id="header-container" data-flex="true" class="">
-                <div data-flex="true"><img src="images/logo.svg" alt="Cryptex Logo" data-logo="header-logo"></div>
-            <button id="nav-toggler" data-flex="true">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <nav>
-                <ul>
-                    <li class="li-nav"><a class="current-page">Homepage</a></li>
-                    <li class="li-nav"><a>Buy Crypto</a></li>
-                    <li class="li-nav"><a>Markets</a></li>
-                    <li class="li-nav"><a>Sell Crypto</a></li>
-                    <li class="li-nav"><a>Blog</a></li>
-                    <li class="li-nav"><a>BITUSDT</a></li>
+    <div id="root" data-navbar="false">
+      <header>
+        <div id="header-container" data-flex="true" class="">
+          <div data-flex="true">
+            <img
+              src="images/logo.svg"
+              alt="Cryptex Logo"
+              data-logo="header-logo"
+            />
+          </div>
+          <button id="nav-toggler" data-flex="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <nav>
+            <ul>
+              <li class="li-nav"><a class="current-page">Homepage</a></li>
+              <li class="li-nav"><a>Buy Crypto</a></li>
+              <li class="li-nav"><a>Markets</a></li>
+              <li class="li-nav"><a>Sell Crypto</a></li>
+              <li class="li-nav"><a>Blog</a></li>
+              <li class="li-nav"><a>BITUSDT</a></li>
+            </ul>
+          </nav>
+          <button data-btn="wallet-link">Wallet</button>
+        </div>
+      </header>
+      <main id="homepage-main">
+        <section id="first-sec" class="sec viewport-visibility">
+          <div>
+            <h1 id="first-sec-h1">Buy & Sell Digital Assets In The Cryptex</h1>
+            <p>
+              Coin Cryptex is the easiest, safest and fastest way to buy & sell
+              crypto asset exchange.
+            </p>
+            <button>Get started now</button>
+          </div>
+          <div>
+            <img src="images/hero-banner.png" alt="" data-img="hero-banner" />
+          </div>
+        </section>
+
+        <section id="second-sec" class="sec viewport-visibility">
+          <div id="web3-details">
+            <article>
+              <div data-div="activities">
+                <ul data-flex="true">
+                  <li class="current-activity"><a>Crypto</a></li>
+                  <li><a>DeFi</a></li>
+                  <li><a>BSC</a></li>
+                  <li><a>NFT</a></li>
+                  <li><a>Metaverse</a></li>
+                  <li><a>Polkadot</a></li>
+                  <li><a>Solana</a></li>
+                  <li><a>Opensea</a></li>
+                  <li><a>Makersplace</a></li>
                 </ul>
-            </nav>
-            <button data-btn="wallet-link">Wallet</button>
+              </div>
+              <div id="card-grid">
+                <div class="card">
+                  <div class="card-header" data-flex="true">
+                    <img src="./images/coin-1.svg" alt="" class="coin-svg" />
+                    <span
+                      >Bitcoin
+                      <span class="card-coin"> BTC/USD </span>
+                    </span>
+                  </div>
+                  <data class="card-value" value="46168.95">USD 46,168.95</data>
+                  <div class="card-analytics" data-flex="true">
+                    <span>36,641.20</span>
+                    <span class="card-analytics-percent-rate"> -0.79% </span>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header" data-flex="true">
+                    <img src="./images/coin-2.svg" alt="" class="coin-svg" />
+                    <span
+                      >Ethereum
+                      <span class="card-coin"> ETH/USD </span>
+                    </span>
+                  </div>
+                  <data class="card-value" value="46168.95">USD 3480.04</data>
+                  <div class="card-analytics" data-flex="true">
+                    <span>36,641.20</span>
+                    <span class="card-analytics-percent-rate"> +10.55% </span>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header" data-flex="true">
+                    <img src="./images/coin-3.svg" alt="" class="coin-svg" />
+                    <span
+                      >Tether
+                      <span class="card-coin"> USDT/USD </span>
+                    </span>
+                  </div>
+                  <data class="card-value" value="46168.95">USD 1.00</data>
+                  <div class="card-analytics" data-flex="true">
+                    <span>36,641.20</span>
+                    <span class="card-analytics-percent-rate"> -0.01% </span>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header" data-flex="true">
+                    <img src="./images/coin-4.svg" alt="" class="coin-svg" />
+                    <span
+                      >BNB
+                      <span class="card-coin"> BNB/USD </span>
+                    </span>
+                  </div>
+                  <data class="card-value" value="46168.95">USD 443.56</data>
+                  <div class="card-analytics" data-flex="true">
+                    <span>36,641.20</span>
+                    <span class="card-analytics-percent-rate"> -1.24% </span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <section id="market-update" class="viewport-visibility">
+            <div data-flex="true">
+              <h2>Market Update</h2>
+              <a href="#">See All Coins</a>
             </div>
-            
-        </header>
-        <main id="homepage-main">
-            <section id="first-sec" class="sec viewport-visibility">
-                <div>
-                    <h1 id="first-sec-h1">Buy & Sell Digital Assets In The Cryptex</h1>
-                    <p>Coin Cryptex is the easiest, safest and fastest way to buy & sell crypto asset exchange.</p>
-                    <button>Get started now</button>
-                </div>
-                <div>
-                    <img src="images/hero-banner.png" alt="" data-img="hero-banner">
-                </div>
-            </section>
 
-            <section id="second-sec" class="sec viewport-visibility">
-               <div id="web3-details">
-                <article >
-                    <div data-div="activities">
-                        <ul data-flex="true">
-                        <li class="current-activity"><a>Crypto</a></li>
-                        <li><a>DeFi</a></li>
-                        <li><a>BSC</a></li>
-                        <li><a>NFT</a></li>
-                        <li><a>Metaverse</a></li>
-                        <li><a>Polkadot</a></li>
-                        <li><a>Solana</a></li>
-                        <li><a>Opensea</a></li>
-                        <li><a>Makersplace</a></li>
-                        </ul>
-                    </div>
-                    <div id="card-grid">
+            <div id="table-container">
+              <ul id="market-categories" data-flex="true">
+                <li class="active-category"><a>View All</a></li>
+                <li><a>Metaverse</a></li>
+                <li><a>Entertainment</a></li>
+                <li><a>Energy</a></li>
+                <li><a>NFT</a></li>
+                <li><a>Gaming</a></li>
+                <li><a>Music</a></li>
+              </ul>
+              <table id="market-table">
+                <tr id="header-row">
+                  <th></th>
+                  <th class="index">#</th>
+                  <th>Name</th>
+                  <th>Last Price</th>
+                  <th>24h %</th>
+                  <th>Market Cap</th>
+                  <th>Last 7 Days</th>
+                  <th></th>
+                </tr>
 
-                        <div class="card">
-                            <div class="card-header" data-flex="true">
-                                <img src="./images/coin-1.svg" alt="" class="coin-svg">
-                                <span>Bitcoin 
-                                    <span class="card-coin">
-                                        BTC/USD
-                                    </span>
-                                </span>
-                            </div>
-                            <data class="card-value" value="46168.95">USD 46,168.95</data>
-                            <div class="card-analytics" data-flex="true">
-                                <span>36,641.20</span>
-                                <span class="card-analytics-percent-rate">
-                                    -0.79%
-                                </span>
-                            </div>
-                        </div>
+                <tr class="green">
+                  <td class="unicode">&#9734;</td>
+                  <td class="index">1</td>
 
-                        <div class="card">
-                            <div class="card-header" data-flex="true">
-                                <img src="./images/coin-2.svg" alt="" class="coin-svg">
-                                <span>Ethereum 
-                                    <span class="card-coin">
-                                        ETH/USD
-                                    </span>
-                                </span>
-                            </div>
-                            <data class="card-value" value="46168.95">USD 3480.04</data>
-                            <div class="card-analytics" data-flex="true">
-                                <span>36,641.20</span>
-                                <span class="card-analytics-percent-rate">
-                                    +10.55%
-                                </span>
-                            </div>
-                        </div>
+                  <td data-flex="true">
+                    <img src="./images/coin-1.svg" alt="" />
+                    <span
+                      >Bitcoin
+                      <span class="card-coin"> BTC </span>
+                    </span>
+                  </td>
 
-                        <div class="card">
-                            <div class="card-header" data-flex="true">
-                                <img src="./images/coin-3.svg" alt="" class="coin-svg">
-                                <span>Tether 
-                                    <span class="card-coin">
-                                        USDT/USD
-                                    </span>
-                                </span>
-                            </div>
-                            <data class="card-value" value="46168.95">USD 1.00</data>
-                            <div class="card-analytics" data-flex="true">
-                                <span>36,641.20</span>
-                                <span class="card-analytics-percent-rate">
-                                    -0.01%
-                                </span>
-                            </div>
-                        </div>
+                  <td>$56,623.54</td>
+                  <td>+1.45%</td>
+                  <td>$880,423,640,582</td>
+                  <td class="update-chart">
+                    <img src="./images/chart-1.svg" alt="" />
+                  </td>
+                  <td>
+                    <button>Trade</button>
+                  </td>
+                </tr>
 
-                        <div class="card">
-                            <div class="card-header" data-flex="true">
-                                <img src="./images/coin-4.svg" alt="" class="coin-svg">
-                                <span>BNB 
-                                    <span class="card-coin">
-                                        BNB/USD
-                                    </span>
-                                </span>
-                            </div>
-                            <data class="card-value" value="46168.95">USD 443.56</data>
-                            <div class="card-analytics" data-flex="true">
-                                <span>36,641.20</span>
-                                <span class="card-analytics-percent-rate">
-                                    -1.24%
-                                </span>
-                            </div>
-                        </div>
+                <tr class="red">
+                  <td class="unicode">&#9734;</td>
+                  <td class="index">2</td>
+                  <td data-flex="true">
+                    <img src="./images/coin-2.svg" alt="" />
+                    <span
+                      >Ethereum
+                      <span class="card-coin"> ETH </span>
+                    </span>
+                  </td>
 
-                    </div>
-                </article>
-               </div>
+                  <td>$56,623.54</td>
+                  <td>-5.12%</td>
+                  <td>$880,423,640,582</td>
+                  <td class="update-chart">
+                    <img src="./images/chart-2.svg" alt="" />
+                  </td>
+                  <td>
+                    <button>Trade</button>
+                  </td>
+                </tr>
 
-                <section id="market-update"class="viewport-visibility">
+                <tr class="green">
+                  <td class="unicode">&#9734;</td>
+                  <td class="index">3</td>
+                  <td data-flex="true">
+                    <img src="./images/coin-3.svg" alt="" />
+                    <span
+                      >Tether
+                      <span class="card-coin"> USDT/USD </span>
+                    </span>
+                  </td>
+
+                  <td>$56,623.54</td>
+                  <td>+1.45%</td>
+                  <td>$880,423,640,582</td>
+                  <td class="update-chart">
+                    <img src="./images/chart-1.svg" alt="" />
+                  </td>
+                  <td>
+                    <button>Trade</button>
+                  </td>
+                </tr>
+
+                <tr class="red">
+                  <td class="unicode">&#9734;</td>
+                  <td class="index">4</td>
+
+                  <td data-flex="true">
+                    <img src="./images/coin-4.svg" alt="" />
+                    <span
+                      >BNB
+                      <span class="card-coin"> BNB/USD </span>
+                    </span>
+                  </td>
+
+                  <td>$56,623.54</td>
+                  <td>-3.75%%</td>
+                  <td>$880,423,640,582</td>
+                  <td class="update-chart">
+                    <img src="./images/chart-2.svg" alt="" />
+                  </td>
+                  <td>
+                    <button>Trade</button>
+                  </td>
+                </tr>
+
+                <tr class="green">
+                  <td class="unicode">&#9734;</td>
+                  <td class="index">5</td>
+                  <td data-flex="true">
+                    <img src="./images/coin-5.svg" alt="" />
+                    <span
+                      >Solana
+                      <span class="card-coin"> SOL </span>
+                    </span>
+                  </td>
+
+                  <td>$56,623.54</td>
+                  <td>+1.45%</td>
+                  <td>$880,423,640,582</td>
+                  <td class="update-chart">
+                    <img src="./images/chart-1.svg" alt="" />
+                  </td>
+                  <td>
+                    <button>Trade</button>
+                  </td>
+                </tr>
+
+                <tr class="red">
+                  <td class="unicode">&#9734;</td>
+                  <td class="index">6</td>
+
+                  <td data-flex="true">
+                    <img src="./images/coin-6.svg" alt="" />
+                    <span
+                      >XRP
+                      <span class="card-coin"> XRP </span>
+                    </span>
+                  </td>
+
+                  <td>$56,623.54</td>
+                  <td>-2.22%</td>
+                  <td>$880,423,640,582</td>
+                  <td class="update-chart">
+                    <img src="./images/chart-2.svg" alt="" />
+                  </td>
+                  <td>
+                    <button>Trade</button>
+                  </td>
+                </tr>
+
+                <tr class="green">
+                  <td class="unicode">&#9734;</td>
+                  <td class="index">7</td>
+
+                  <td data-flex="true">
+                    <img src="./images/coin-7.svg" alt="" />
+                    <span
+                      >Cardano
+                      <span class="card-coin"> ADA </span>
+                    </span>
+                  </td>
+
+                  <td>$56,623.54</td>
+                  <td>+0.8%</td>
+                  <td>$880,423,640,582</td>
+                  <td class="update-chart">
+                    <img src="./images/chart-1.svg" alt="" />
+                  </td>
+                  <td>
+                    <button>Trade</button>
+                  </td>
+                </tr>
+
+                <tr class="green">
+                  <td class="unicode">&#9734;</td>
+                  <td class="index">8</td>
+
+                  <td data-flex="true">
+                    <img src="./images/coin-8.svg" alt="" />
+                    <span
+                      >Avalanche
+                      <span class="card-coin"> AVAX </span>
+                    </span>
+                  </td>
+
+                  <td>$56,623.54</td>
+                  <td>+1.41%</td>
+                  <td>$880,423,640,582</td>
+
+                  <td class="update-chart">
+                    <img src="./images/chart-1.svg" alt="" />
+                  </td>
+                  <td>
+                    <button>Trade</button>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </section>
+        </section>
+
+        <section id="how-it-work">
+          <div class="viewport-visibility">
+            <h2>How It Work</h2>
+            <p>
+              Stacks is a production-ready library of stackable content blocks
+              built in React Native.
+            </p>
+
+            <div id="process-container">
+              <div class="process">
+                <img src="./images/instruction-1.png" alt="" />
+                <small>STEP 1</small>
+                <h3>Download</h3>
+                <p>
+                  Stacks Is A Production-Ready Library Of Stackable Content
+                  Blocks Built In React Native.
+                </p>
+              </div>
+
+              <div class="process">
+                <img src="./images/instruction-2.png" alt="" />
+                <small>STEP 2</small>
+                <h3>Connect Wallet</h3>
+                <p>
+                  Stacks Is A Production-Ready Library Of Stackable Content
+                  Blocks Built In React Native.
+                </p>
+              </div>
+
+              <div class="process">
+                <img src="./images/instruction-3.png" alt="" />
+                <small>STEP 3</small>
+                <h3>Start Trading</h3>
+                <p>
+                  Stacks Is A Production-Ready Library Of Stackable Content
+                  Blocks Built In React Native.
+                </p>
+              </div>
+
+              <div class="process">
+                <img src="./images/instruction-4.png" alt="" />
+                <small>STEP 4</small>
+                <h3>Earn Money</h3>
+                <p>
+                  Stacks Is A Production-Ready Library Of Stackable Content
+                  Blocks Built In React Native.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="explore-more">
+          <div class="viewport-visibility">
+            <div>
+              <img src="./images/about-banner.png" alt="" />
+            </div>
+            <div>
+              <div>
+                <h2>What Is Cryptex</h2>
+                <p>
+                  Experience a variety of trading on Bitcost. You can use
+                  various types of coin transactions such as Spot Trade, Futures
+                  Trade, P2P, Staking, Mining, and margin.
+                </p>
+                <ul>
+                  <li>
                     <div data-flex="true">
-                        <h2>Market Update</h2>
-                        <a href="#">See All Coins</a>
+                      <div>&#10003;</div>
+                      <h3>View real-time cryptocurrency prices</h3>
                     </div>
-                    
+                    <p>
+                      Experience a variety of trading on Bitcost. You can use
+                      various types of coin transactions such as Spot Trade,
+                      Futures Trade, P2P, Staking, Mining, and margin.
+                    </p>
+                  </li>
 
-                   <div id="table-container">
-                    <ul id="market-categories" data-flex="true">
-                        <li class="active-category"><a>View All</a></li>
-                        <li><a>Metaverse</a></li>
-                        <li><a>Entertainment</a></li>
-                        <li><a>Energy</a></li>
-                        <li><a>NFT</a></li>
-                        <li><a>Gaming</a></li>
-                        <li><a>Music</a></li>
-                    </ul>
-    <table id="market-table">
-        <tr id="header-row">
-            <th></th>
-            <th class="index">#</th>
-            <th>Name</th>
-            <th>Last Price</th>
-            <th>24h %</th>
-            <th>Market Cap</th>
-            <th>Last 7 Days</th>
-            <th></th>
-        </tr>
-
-        <tr class="green">
-            <td class="unicode">
-                &#9734;
-            </td>
-            <td class="index">1</td>
-
-            <td data-flex="true">
-
-                <img src="./images/coin-1.svg" alt="">
-                <span>Bitcoin 
-                    <span class="card-coin">
-                        BTC
-                    </span>
-                </span>
-            </td>
-
-            <td>$56,623.54</td>
-            <td>+1.45%</td>
-            <td>$880,423,640,582</td>
-            <td class="update-chart">
-                <img src="./images/chart-1.svg" alt="">
-            </td>
-            <td>
-                <button>Trade</button>
-            </td>
-        </tr>
-        
-        <tr class="red">
-            <td class="unicode">
-                &#9734;
-            </td>
-            <td class="index">2</td>
-            <td data-flex="true">
-
-                <img src="./images/coin-2.svg" alt="">
-                <span>Ethereum 
-                    <span class="card-coin">
-                        ETH
-                    </span>
-                </span>
-
-            </td>
-
-            <td>$56,623.54</td>
-            <td>-5.12%</td>
-            <td>$880,423,640,582</td>
-            <td class="update-chart">
-                <img src="./images/chart-2.svg" alt="">
-            </td>
-            <td>
-                <button>Trade</button>
-            </td>
-        </tr>
-
-        <tr class="green">
-            <td class="unicode">
-                &#9734;
-            </td>
-            <td class="index">3</td>	
-            <td data-flex="true">
-
-                <img src="./images/coin-3.svg" alt="">
-                <span>Tether
-                    <span class="card-coin">
-                        USDT/USD
-                    </span>
-                </span>
-
-            </td>
-
-            <td>$56,623.54</td>
-            <td>+1.45%</td>
-            <td>$880,423,640,582</td>
-            <td class="update-chart">
-                <img src="./images/chart-1.svg" alt="">
-            </td>
-            <td>
-                <button>Trade</button>
-            </td>
-        </tr>
-
-        <tr class="red">
-            <td class="unicode">
-                &#9734;
-            </td>
-            <td class="index">4</td>
-
-            <td data-flex="true">
-
-                <img src="./images/coin-4.svg" alt="">
-                <span>BNB
-                    <span class="card-coin">
-                        BNB/USD
-                    </span>
-                </span>
-
-            </td>
-
-            <td>$56,623.54</td>
-            <td>-3.75%%</td>
-            <td>$880,423,640,582</td>
-            <td class="update-chart">
-                <img src="./images/chart-2.svg" alt="">
-            </td>
-            <td>
-                <button>Trade</button>
-            </td>
-        </tr>
-
-        <tr class="green">
-            <td class="unicode">
-                &#9734;
-            </td>
-            <td class="index">5</td>
-            <td data-flex="true">
-
-                <img src="./images/coin-5.svg" alt="">
-                <span>Solana 
-                    <span class="card-coin">
-                        SOL
-                    </span>
-                </span>
-
-            </td>
-
-            <td>$56,623.54</td>
-            <td>+1.45%</td>
-            <td>$880,423,640,582</td>
-            <td class="update-chart">
-                <img src="./images/chart-1.svg" alt="">
-            </td>
-            <td>
-                <button>Trade</button>
-            </td>
-        </tr>
-
-        <tr class="red">
-            <td class="unicode">
-                &#9734;
-            </td>
-            <td class="index">6</td>
-
-            <td data-flex="true">
-
-                <img src="./images/coin-6.svg" alt="">
-                <span>XRP 
-                    <span class="card-coin">
-                        XRP
-                    </span>
-                </span>
-
-            </td>
-
-            <td>$56,623.54</td>
-            <td>-2.22%</td>
-            <td>$880,423,640,582</td>
-            <td class="update-chart">
-                <img src="./images/chart-2.svg" alt="">
-            </td>
-            <td>
-                <button>Trade</button>
-            </td>
-        </tr>
-
-        <tr class="green">
-            <td class="unicode">
-                &#9734;
-            </td>
-            <td class="index">7</td>
-            
-            <td data-flex="true">
-
-                <img src="./images/coin-7.svg" alt="">
-                <span>Cardano 
-                    <span class="card-coin">
-                        ADA
-                    </span>
-                </span>
-
-            </td>
-
-            <td>$56,623.54</td>
-            <td>+0.8%</td>
-            <td>$880,423,640,582</td>
-            <td class="update-chart">
-                <img src="./images/chart-1.svg" alt="">
-            </td>
-            <td>
-                <button>Trade</button>
-            </td>
-        </tr>
-
-        <tr class="green">
-            <td class="unicode">
-                &#9734;
-            </td>
-            <td class="index">8</td>
-
-            <td data-flex="true">
-                
-                <img src="./images/coin-8.svg" alt="">
-                <span>Avalanche 
-                    <span class="card-coin">
-                        AVAX
-                    </span>
-                </span>
-
-            </td>
-
-            <td>$56,623.54</td>
-            <td>+1.41%</td>
-            <td>$880,423,640,582</td>
-
-                        <td class="update-chart">
-                            <img src="./images/chart-1.svg" alt="">
-                        </td>
-                        <td>
-                            <button>Trade</button>
-                        </td>
-                    </tr>
-                </table>
+                  <li>
+                    <div data-flex="true">
+                      <div>&#10003;</div>
+                      <h3>Buy and sell BTC, ETH, XRP, OKB, Etc...</h3>
+                    </div>
+                    <p>
+                      Experience a variety of trading on Bitcost. You can use
+                      various types of coin transactions such as Spot Trade,
+                      Futures Trade, P2P, Staking, Mining, and margin.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div id="explore-btn">
+                <button>Explore More</button>
+              </div>
             </div>
-                </section>
-            </section>
+          </div>
+        </section>
 
-            <section id="how-it-work">
-                <div class="viewport-visibility">
-                    <h2>How It Work</h2>
-                    <p>Stacks is a production-ready library of stackable content blocks built in React Native.</p>
+        <section id="mobile-apps">
+          <div class="viewport-visibility">
+            <div>
+              <h2>Free Your Money & Invest With Confident</h2>
+              <p>
+                With Cryptor Trade, you can be sure your trading skills are
+                matched
+              </p>
+              <ul>
+                <li>
+                  <div data-flex="true">
+                    <div>&#10003;</div>
+                    <h3>Buy, Sell, And Trade On The Go</h3>
+                  </div>
 
-               
-                    <div id="process-container">
-                        <div class="process">
-                            <img src="./images/instruction-1.png" alt="">
-                            <small>STEP 1</small>
-                            <h3>Download</h3>
-                            <p>Stacks Is A Production-Ready Library Of Stackable 
-                            Content Blocks Built In React Native.
-                            </p>
-                        </div>
-    
-                        <div class="process">
-                            <img src="./images/instruction-2.png" alt="">
-                            <small>STEP 2</small>
-                            <h3>Connect Wallet</h3>
-                            <p>Stacks Is A Production-Ready Library Of Stackable 
-                            Content Blocks Built In React Native.
-                            </p>
-                        </div>
-    
-                        <div class="process">
-                            <img src="./images/instruction-3.png" alt="">
-                            <small>STEP 3</small>
-                            <h3>Start Trading</h3>
-                            <p>Stacks Is A Production-Ready Library Of Stackable 
-                            Content Blocks Built In React Native.
-                            </p>
-                        </div>
-    
-                        <div class="process">
-                            <img src="./images/instruction-4.png" alt="">
-                            <small>STEP 4</small>
-                            <h3>Earn Money</h3>
-                            <p>Stacks Is A Production-Ready Library Of Stackable 
-                            Content Blocks Built In React Native.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-            </section>
+                  <p>Manage Your Holdings From Your Mobile Device</p>
+                </li>
+                <li>
+                  <div data-flex="true">
+                    <div>&#10003;</div>
+                    <h3>Take Control Of Your Wealth</h3>
+                  </div>
+                  <p>
+                    Rest Assured You (And Only You) Have Access To Your Funds
+                  </p>
+                </li>
+              </ul>
+              <div id="appstore">
+                <button>
+                  <img src="./images/googleplay.png" alt="Google Play" />
+                </button>
+                <button>
+                  <img src="./images/appstore.png" alt="Apple Store" />
+                </button>
+              </div>
+            </div>
 
-            <section id="explore-more">
-                <div class="viewport-visibility">
-                    <div>
-                        <img src="./images/about-banner.png" alt="">
-                    </div>
-                    <div>
-                        <div>
-                            <h2>
-                                What Is Cryptex
-                            </h2>
-                            <p>
-                                Experience a variety of trading on Bitcost. You can use various types of coin transactions such as 
-                                Spot Trade, Futures Trade, P2P, Staking, Mining, and margin.
-                            </p>
-                            <ul>
-                                <li>
-                                    <div data-flex="true">
-                                        <div>
-                                            &#10003;
-                                        </div>
-                                        <h3> View real-time cryptocurrency prices </h3>
-                                    </div>
-                                    <p>
-                                        Experience a variety of trading on Bitcost. You can use various types of coin transactions such as 
-                                    Spot Trade, Futures Trade, P2P, Staking, Mining, and margin.
-                                    </p>
-                                </li>
-        
-                                <li>
-                                    <div data-flex="true">
-                                        <div>
-                                            &#10003;
-                                        </div>
-                                        <h3> Buy and sell BTC, ETH, XRP, OKB, Etc... </h3>
-                                    </div>
-                                    <p>
-                                        Experience a variety of trading on Bitcost. You can use various types of coin transactions such as 
-                                    Spot Trade, Futures Trade, P2P, Staking, Mining, and margin.
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div id="explore-btn">
-                            <button>Explore More</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <div id="scan-qrcode">
+              <button>Scan To Download</button>
+              <img src="./images/app-banner.png" alt="" />
+            </div>
+          </div>
+        </section>
 
-            <section id="mobile-apps">
-                <div class="viewport-visibility">
-                    <div>
-                        <h2>
-                            Free Your Money & Invest With Confident
-                        </h2>
-                        <p>With Cryptor Trade, you can be sure your trading skills are matched</p>
-                        <ul>
-                            <li>
-                                <div data-flex="true">
-                                    <div>
-                                        &#10003;
-                                    </div>
-                                    <h3>Buy, Sell, And Trade On The Go </h3>
-                                </div>
-                                
-                                <p>Manage Your Holdings From Your Mobile Device</p>
-                            </li>
-                            <li>
-                                <div data-flex="true">
-                                    <div>
-                                        &#10003;
-                                    </div>
-                                    <h3>Take Control Of Your Wealth</h3>
-                                </div>
-                                <p>Rest Assured You (And Only You) Have Access To Your Funds</p> 
-                            </li>
-                        </ul>
-                        <div id="appstore">
-                            <button>
-                                <img src="./images/googleplay.png" alt="Google Play">
-                            </button>
-                           <button>
-                            <img src="./images/appstore.png" alt="Apple Store">
-                           </button>
-                        </div>
-                    </div>
-                    
-                    <div id="scan-qrcode">
-                        <button>Scan To Download</button>
-                        <img src="./images/app-banner.png" alt="">
-                    </div>
-                </div>
-            </section>
+        <section id="contact-cryptex">
+          <div id="contact-box" class="viewport-visibility">
+            <div id="contact-details">
+              <div data-flex="true">
+                <img src="./images/logo.svg" alt="" />
+              </div>
+              <h3>Let's talk! 🤙</h3>
+              <ul>
+                <li><a href="tel:+12 345 678 9101">+12 345 678 9101</a></li>
+                <li>
+                  <a href="mailto:hello.cryptex@gmail.com"
+                    >hello.cryptex@gmail.com</a
+                  >
+                </li>
+                <li>
+                  Cecilia Chapman 711-2880 Nulla St. Mankato Mississippi 96522
+                </li>
+              </ul>
+            </div>
 
-            <section id="contact-cryptex">
-                <div id="contact-box" class="viewport-visibility">
-                    <div id="contact-details">
-                        <div data-flex="true">
-                            <img src="./images/logo.svg" alt="">
-                        </div>
-                        <h3>Let's talk! 🤙</h3>
-                        <ul>
-                            <li><a href="tel:+12 345 678 9101">+12 345 678 9101</a></li>
-                            <li><a href="mailto:hello.cryptex@gmail.com">hello.cryptex@gmail.com</a></li>
-                            <li>Cecilia Chapman 711-2880 Nulla St. Mankato Mississippi 96522</li>
-                        </ul>
-                    </div>
-    
-                        <div class="footer-info">
-                            <h3>Products</h3>
-                            <ul>
-                                <li><a href="">Spot</a></li>
-                                <li><a href="">Inverse Perpetual</a></li>
-                                <li><a href="">USDT Perpetual</a></li>
-                                <li><a href="">Exchange</a></li>
-                                <li><a href="">Launchpad</a></li>
-                                <li><a href="">Binance Pay</a></li>
-                            </ul>
-                        </div>
-    
-                        <div class="footer-info">
-                            <h3>Services</h3>
-                            <ul>
-                                <li><a href="">Buy Crypto</a></li>
-                                <li><a href="">Markets</a></li>
-                                <li><a href="">Tranding Fee</a></li>
-                                <li><a href="">Affiliate Program</a></li>
-                                <li><a href="">Referral Program</a></li>
-                                <li><a href="">API</a></li>
-                            </ul>
-    
-                        </div>
-                        <div class="footer-info">
-                            <h3>Support</h3>
-                            <ul>
-                                <li><a href="">Bybit Learn</a></li>
-                                <li><a href=""> Help Center </a></li>
-                                <li><a href="">User Feedback</a></li>
-                                <li><a href="">Submit a request</a></li>
-                                <li><a href="">API Documentations</a></li>
-                                <li><a href="">Trading Rule</a></li>
-                            </ul>
-    
-                        </div>
-                        <div class="footer-info">
-                            <h3>About Us</h3>
-                            <ul>
-                                <li><a href="">About Bybit</a></li>
-                                <li><a href="">Authenticity Check</a></li>
-                                <li><a href="">Careers</a></li>
-                                <li><a href="">Business Contacts</a></li>
-                                <li><a href="">Blog</a></li>
-                            </ul>
-    
-                        </div>
-                </div>
-            </section>
+            <div class="footer-info">
+              <h3>Products</h3>
+              <ul>
+                <li><a href="">Spot</a></li>
+                <li><a href="">Inverse Perpetual</a></li>
+                <li><a href="">USDT Perpetual</a></li>
+                <li><a href="">Exchange</a></li>
+                <li><a href="">Launchpad</a></li>
+                <li><a href="">Binance Pay</a></li>
+              </ul>
+            </div>
 
-            <footer>
-                <small>© 2022 Cryptex All Rights Reserved by <a href="">bug_burster</a></small>
-                <div id="socials" data-flex="true">
-                <a href=""><img src="./images/icons8-facebook.svg" alt="Facebook"></a>
-                <a href=""><img src="./images/icons8-twitter.svg" alt="Twitter"></a>
-                <a href=""><img src="./images/icons8-instagram.svg" alt="Instagram"></a>
-                <a href=""><img src="./images/icons8-linkedin.svg" alt="Linkedin"></a>
-                </div>
-            </footer>
-        
-        </main>
+            <div class="footer-info">
+              <h3>Services</h3>
+              <ul>
+                <li><a href="">Buy Crypto</a></li>
+                <li><a href="">Markets</a></li>
+                <li><a href="">Tranding Fee</a></li>
+                <li><a href="">Affiliate Program</a></li>
+                <li><a href="">Referral Program</a></li>
+                <li><a href="">API</a></li>
+              </ul>
+            </div>
+            <div class="footer-info">
+              <h3>Support</h3>
+              <ul>
+                <li><a href="">Bybit Learn</a></li>
+                <li><a href=""> Help Center </a></li>
+                <li><a href="">User Feedback</a></li>
+                <li><a href="">Submit a request</a></li>
+                <li><a href="">API Documentations</a></li>
+                <li><a href="">Trading Rule</a></li>
+              </ul>
+            </div>
+            <div class="footer-info">
+              <h3>About Us</h3>
+              <ul>
+                <li><a href="">About Bybit</a></li>
+                <li><a href="">Authenticity Check</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Business Contacts</a></li>
+                <li><a href="">Blog</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <footer>
+          <small
+            >© 2022 Cryptex All Rights Reserved by
+            <a href="">bug_burster</a></small
+          >
+          <div id="socials" data-flex="true">
+            <a href=""
+              ><img src="./images/icons8-facebook.svg" alt="Facebook"
+            /></a>
+            <a href=""
+              ><img src="./images/icons8-twitter.svg" alt="Twitter"
+            /></a>
+            <a href=""
+              ><img src="./images/icons8-instagram.svg" alt="Instagram"
+            /></a>
+            <a href=""
+              ><img src="./images/icons8-linkedin.svg" alt="Linkedin"
+            /></a>
+          </div>
+        </footer>
+      </main>
     </div>
-</body>
+  </body>
 </html>
