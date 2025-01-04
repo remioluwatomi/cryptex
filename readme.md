@@ -11,7 +11,6 @@ A simple and modern landing page designed for a cryptocurrency-related project, 
 
 ## Screenshots
 
-_Add a screenshot or preview of your landing page here._  
 ![Screenshot of Crypto Landing Page](assets/screenshot.png)
 
 ## Technologies Used
